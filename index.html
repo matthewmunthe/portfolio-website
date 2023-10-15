@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew's Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Harmattan&family=Open+Sans&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <ul class="nav-bar">
+        <li><a href="#" onclick="return false;">Profile</a></li>
+        <li><a href="#" onclick="scrollToBio()">Biography</a></li>
+        <li><a href="#" onclick="scrollToPort()">Portfolio</a></li>
+        <li><a href="#" onclick="scrollToSkills()">Skills</a></li>
+        <li><a href="#" onclick="scrollToEdu()">Education</a></li>
+        <li><a href="#" onclick="scrollToExp()">Experience</a></li>
+        <li><a href="#" onclick="scrollToContact()">Contact</a></li>
+    </ul>
+
+    <!-- Profile -->
+    <div class="container">
+
+        <div class="profile">
+            <img id="profilePic" src="./assets/profile-pic.png" alt="Profile Picture">
+            <div class="profile-bio">
+                <h1>I am Matthew Gabe Jordan Munthe</h1>
+                <h3>Front-end Web Developer and UI Designer</h3>
+                <p>coding beautiful and useful website.</p>
+                <div class="profile-contact">
+                    <a href="https://www.linkedin.com/in/matthew-gabe-jordan-munthe-538009220/" target="_blank">
+                        <img class="icon linkedin" src="./assets/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/matthewmunthe" target="_blank">
+                        <img class="icon github" src="./assets/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.behance.net/matthewmunthe?log_shim_removal=1" target="_blank">
+                        <img class="icon behance" src="./assets/behance.svg" alt="Behance">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Biography -->
+    <div class="biography">
+        <h1>Biography</h1>
+        <div class="bio-desc">
+            <h2>I am an aspiring Front-End Web Developer and UI Designer who currently studying Computer Science at
+                BINUS University. I am very open to learn new things especially in Computer Science field. As a
+                developer, I always try to keep up with new technologies. Persevere and fast learner are two words
+                which describe myself the best. It is proven by my performance both in independent learnings and group
+                projects that I had completed.
+            </h2>
+            <img src="./assets/programmer.gif" alt="Programmer GIF">
+        </div>
+        <h5 class="quotes">"It does not matter how slowly you go so long as you do not stop" &emsp;-Confucius</h5>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div class="portfolio-content">
+        <div class="portfolio-contain">
+            <img src="./assets/porto1.png" alt="Portfolio 1">
+            <div class="portfolio-text">
+                <h1 class="portfolio-title">
+                    M&T Clothing Store
+                </h1>
+                <h3 class="portfolio-subtitle">
+                    A simple clothing store website, made using HTML, CSS, and JavaScript.
+                </h3>
+                <a type="button" href="https://github.com/matthewmunthe/MT-Clothing-Store" target="_blank">See
+                    More</a>
+            </div>
+        </div>
+        <div class="portfolio-contain">
+            <img src="./assets/porto2-2.png" alt="Portfolio 2-2">
+            <div class="portfolio-text">
+                <h1 class="portfolio-title">
+                    MyKos
+                </h1>
+                <h3 class="portfolio-subtitle">
+                    Web based kos / flat management made for Android mobile devices.
+                </h3>
+                <a type="button" href="https://github.com/matthewmunthe/MyKos" target="_blank">See
+                    More</a>
+            </div>
+        </div>
+        <div class="portfolio-contain">
+            <img src="./assets/porto3.png" alt="Portfolio 3">
+            <div class="portfolio-text">
+                <h1 class="portfolio-title">
+                    Surfle Search Engine Mobile App
+                </h1>
+                <h3 class="portfolio-subtitle">
+                    UI design of Surfle, a search engine mobile applivation.
+                </h3>
+                <a type="button" href="https://www.behance.net/gallery/164011581/Surfle-Search-Engine-Mobile-App-Design"
+                    target="_blank">See
+                    More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills">
+        <h1>Skills</h1>
+        <div class="skill-list">
+            <div class="skill-contain">
+                <h3>HTML</h3>
+                <progress class="html-meter" value="0" max="100"></progress>
+                <span>90%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>CSS</h3>
+                <progress class="css-meter" value="0" max="100"></progress>
+                <span>90%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>JavaScript</h3>
+                <progress class="js-meter" value="0" max="100"></progress>
+                <span>90%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>React</h3>
+                <progress class="react-meter" value="0" max="100"></progress>
+                <span>80%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>Git</h3>
+                <progress class="git-meter" value="0" max="100"></progress>
+                <span>75%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>Figma</h3>
+                <progress class="figma-meter" value="0" max="100"></progress>
+                <span>75%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>SQL</h3>
+                <progress class="sql-meter" value="0" max="100"></progress>
+                <span>70%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>Laravel</h3>
+                <progress class="laravel-meter" value="0" max="100"></progress>
+                <span>65%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>Teamwork</h3>
+                <progress class="teamwork-meter" value="0" max="100"></progress>
+                <span>90%</span>
+            </div>
+            <div class="skill-contain">
+                <h3>Communication</h3>
+                <progress class="communication-meter" value="0" max="100"></progress>
+                <span>75%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="certification">
+        <h3>Some of my certifications from the courses I had taken.</h3>
+        <div class="grid-certification">
+            <div class="certif certif-1" onclick="handleClick(0)"><img src="./assets/bncc-logo.png" alt="BNCC"></div>
+            <div class="certif certif-2" onclick="handleClick(1)"><img src="./assets//kominfo-logo.png" alt="Kominfo">
+            </div>
+            <div class="certif certif-3" onclick="handleClick(2)"><img src="./assets/python1-logo.png"
+                    alt="Python Essentials 1">
+            </div>
+            <div class="certif certif-4" onclick="handleClick(3)"><img src="./assets/python2-logo.png"
+                    alt="Python Essentials 2">
+            </div>
+            <div class="certif certif-5" onclick="handleClick(4)"><img src="./assets/data-logo.png"
+                    alt="Data Analytics Essentials"></div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="education">
+        <h1>Education</h1>
+        <div class="edu-list">
+            <div class="edu1">
+                <div class="edu-header">
+                    <h2>BINUS University</h2>
+                    <h3>West Jakarta, Indonesia</h3>
+                    <h4>Computer Science (Multimedia Interactive streaming)</h4>
+                    <h5>Current GPA : 3.42 / 4 (4<sup>th</sup> Semester)</h5>
+                    <h5>2021 - 2025</h5>
+                </div>
+                <p>BINUS University is where I study Computer Science for my Bachelor's Degree. Computer Science is a
+                    major which study about computer and its computational system. While in univeersity, I study a lot
+                    about Algorithm, Network, Database and one field which peak my interest is Interactive
+                    Multimedia. Hence, I am picking Interactive Multimedia streaming program for my fourth to fifth
+                    semester.
+                    Multimedia Interactive refers to digital content that allows the user to engage dynamically and
+                    interactively.
+                    <br>
+                    I also join several student units, such as BNCC (Bina Nusantara Computer Club) and BSLC (BINUS
+                    Student Learning Club) during my study. I've become Member and Mentor in these student units
+                    respectively. It helps me grow a lot, especially my teamwork, communication, and mentoring skills.
+                </p>
+            </div>
+            <div class="edu2">
+                <div class="edu-header">
+                    <h2>SMA Santo Thomas 2 Medan</h2>
+                    <h3>Medan, Indonesia</h3>
+                    <h4>Natural Science</h4>
+                    <h5>Final GPA : 87.27 / 100</h5>
+                    <h5>2018 - 2021</h5>
+                </div>
+                <p>
+                    SMA Santo Thomas 2 Medan is where I attend my senior high school years. I chose Natural Science as
+                    my major. I graduated from the school in 2021 with GPA 87.27 out of 100. I continue to pursue my
+                    Bachelor's Degree at BINUS University.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="experience">
+        <h1>Experience</h1>
+        <div class="exp-list">
+            <div class="exp1">
+                <div class="exp-header">
+                    <h2>Mentor</h2>
+                    <h3>BINUS Student Learning Center</h3>
+                    <h4>West Jakarta, Indonesia (Hybrid)</h4>
+                    <h5>Sep 2023 - Jan 2024</h5>
+                </div>
+                <p>
+                    Mentoring is a teaching and learning program between mentor and mentee from BSLC which conducted
+                    in a small group of 5 to 10 students. As a mentor in this program, I gain and train a lot of
+                    soft skills, especially teaching and communication skills.
+                </p>
+            </div>
+            <div class="exp2">
+                <div class="exp-header">
+                    <h2>Member</h2>
+                    <h3>Bina Nusantara Computer Club</h3>
+                    <h4>West Jakarta, Indonesia (Remote)</h4>
+                    <h5>Feb 2021 - Aug 2021</h5>
+                </div>
+                <p>
+                    While becoming the member of the student unit, I attend their Learning and Training program. It is a
+                    program where the members gain lecture of certain programming skill of their preference, I chose
+                    Front-End Web Development. Some other benefits of the organization, such as networking and get to
+                    know their latest event earlier.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+        <h1>You've reach the end of my page.</h1>
+        <h1>Wanna know more about me ?</h1>
+        <h1>Feel free to ask by clicking the button below.</h1>
+        <button class="contact-btn" onclick="location.href='mailto:munthematthew115@gmail.com'">Know Me Better</button>
+    </div>
+
+    <div id="modal">
+        <div id="modalContent">
+            <div id="close" title="close" onclick="handleClose()">x</div>
+            <h1 id="modalTitle"></h1>
+            <div id="modalImage"></div>
+            <h5 id="modalDesc"></h5>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+
+</html>
