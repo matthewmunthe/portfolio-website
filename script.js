@@ -1,3 +1,4 @@
+import anime from "animejs/lib/anime.es.js";
 $(document).on("load", function () {
   if (window.innerWidth >= 425) {
     function scrollToBio() {
