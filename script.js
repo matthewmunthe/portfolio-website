@@ -53,27 +53,27 @@ if (window.innerWidth >= 768) {
 
 if (window.innerWidth >= 1440) {
   function scrollToBio() {
-    window.scrollTo(0, 1187);
+    window.scrollTo(0, 715);
   }
 
   function scrollToPort() {
-    window.scrollTo(0, 2040);
+    window.scrollTo(0, 1383);
   }
 
   function scrollToSkills() {
-    window.scrollTo(0, 2902);
+    window.scrollTo(0, 2062);
   }
 
   function scrollToEdu() {
-    window.scrollTo(0, 4933);
+    window.scrollTo(0, 3620);
   }
 
   function scrollToExp() {
-    window.scrollTo(0, 6119);
+    window.scrollTo(0, 4380);
   }
 
   function scrollToContact() {
-    window.scrollTo(0, 7305);
+    window.scrollTo(0, 5249);
   }
 }
 
