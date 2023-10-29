@@ -406,7 +406,7 @@ window.onclick = function (event) {
 
 if (window.innerWidth >= 1440) {
   const background = document.querySelector(".contact");
-  for (var i = 0; i <= 20; i++) {
+  for (var i = 0; i <= 10; i++) {
     const blocks = document.createElement("div");
     blocks.classList.add("block");
     background.appendChild(blocks);
@@ -422,7 +422,7 @@ if (window.innerWidth >= 1440) {
         return anime.random(-210, 210);
       },
       scale: () => {
-        return anime.random(1, 5);
+        return anime.random(2, 5);
       },
 
       easing: "linear",
