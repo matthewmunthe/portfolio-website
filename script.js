@@ -438,7 +438,7 @@ if (window.innerWidth >= 1440) {
     const r5 = randomBetween(0, 255);
     const g5 = randomBetween(0, 255);
     const b5 = randomBetween(0, 255);
-    const rgb5 = `rgb(${r2},${g2},${b2})`;
+    const rgb5 = `rgb(${r5},${g5},${b5})`;
 
     anime({
       targets: ".block",
@@ -464,9 +464,25 @@ if (window.innerWidth >= 1440) {
 }
 
 const wiggleInBtn = () => {
+  const randomBetween = (min, max) =>
+    min + Math.floor(Math.random() * (max - min + 1));
+
+  const r6 = randomBetween(0, 255);
+  const g6 = randomBetween(0, 255);
+  const b6 = randomBetween(0, 255);
+  const btnCol = `rgb(${r6},${g6},${b6})`;
+
+  if (r6 + g6 + b6 >= 355) {
+    anime({
+      targets: ".contact-btn",
+      color: "#000000",
+    });
+  }
+
   anime({
     targets: ".contact-btn",
     scale: 1.3,
+    backgroundColor: btnCol,
   });
 };
 
@@ -474,6 +490,8 @@ const wiggleOutBtn = () => {
   anime({
     targets: ".contact-btn",
     scale: 1,
+    backgroundColor: "#484041",
+    color: "#FDFFFC",
   });
 };
 
