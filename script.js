@@ -348,7 +348,7 @@ document.querySelector(".certif-5").addEventListener("mouseout", certif5Out);
 const listCertifications = [
   {
     title: "BNCC Front-End Development",
-    image: "./assets/bncc-certif.png",
+    image: "./assets/bncc-certif.jpg",
     desc: "Front-End Development course from BINUS University Computer Club. Mainly teach about how to create a good front-end for websites using HTML, CSS, JavaScript, also with framework and library, such as Bootstrap and jQuery.",
   },
   {
@@ -406,15 +406,43 @@ window.onclick = function (event) {
 
 if (window.innerWidth >= 1440) {
   const background = document.querySelector(".contact");
-  for (var i = 0; i <= 10; i++) {
+  for (var i = 0; i <= 15; i++) {
     const blocks = document.createElement("div");
     blocks.classList.add("block");
     background.appendChild(blocks);
   }
 
   let animateBlocks = () => {
+    const randomBetween = (min, max) =>
+      min + Math.floor(Math.random() * (max - min + 1));
+    const r1 = randomBetween(0, 255);
+    const g1 = randomBetween(0, 255);
+    const b1 = randomBetween(0, 255);
+    const rgb1 = `rgb(${r1},${g1},${b1})`;
+
+    const r2 = randomBetween(0, 255);
+    const g2 = randomBetween(0, 255);
+    const b2 = randomBetween(0, 255);
+    const rgb2 = `rgb(${r2},${g2},${b2})`;
+
+    const r3 = randomBetween(0, 255);
+    const g3 = randomBetween(0, 255);
+    const b3 = randomBetween(0, 255);
+    const rgb3 = `rgb(${r3},${g3},${b3})`;
+
+    const r4 = randomBetween(0, 255);
+    const g4 = randomBetween(0, 255);
+    const b4 = randomBetween(0, 255);
+    const rgb4 = `rgb(${r4},${g4},${b4})`;
+
+    const r5 = randomBetween(0, 255);
+    const g5 = randomBetween(0, 255);
+    const b5 = randomBetween(0, 255);
+    const rgb5 = `rgb(${r2},${g2},${b2})`;
+
     anime({
       targets: ".block",
+      backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
       translateX: () => {
         return anime.random(-600, 600);
       },

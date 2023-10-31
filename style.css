@@ -411,12 +411,13 @@ progress::-moz-progress-bar {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    color: #FDFFFC;
-    background-color: #ED6A5A;
+    color: black;
+    background-color: #FDFFFC;
 }
 
 .contact h1{
     z-index: 999;
+    background-color: #FDFFFC;
 }
 
 .contact button{
@@ -435,7 +436,7 @@ progress::-moz-progress-bar {
     position: absolute;
     height: 60px;
     width: 60px;
-    background: #ED6A5A;
+    background-color: #D76052;
     -webkit-box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 }
