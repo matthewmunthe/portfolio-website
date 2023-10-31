@@ -128,6 +128,7 @@ html{
 
 .quotes .letter {
     display: inline-block;
+    opacity: 0;
 }
 
 .portfolio-content{
@@ -432,7 +433,7 @@ progress::-moz-progress-bar {
     z-index: 999;
 }
 
-.block {
+.block1, .block2, .block3 {
     position: absolute;
     height: 60px;
     width: 60px;

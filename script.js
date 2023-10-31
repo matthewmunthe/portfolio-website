@@ -148,6 +148,7 @@ anime
     translateY: [-20, 0],
     easing: "easeOutExpo",
     duration: 1400,
+    opacity: 100,
     delay: (el, i) => 30 * i,
   })
   .add({
@@ -406,9 +407,15 @@ window.onclick = function (event) {
 
 if (window.innerWidth >= 1440) {
   const background = document.querySelector(".contact");
-  for (var i = 0; i <= 15; i++) {
+  for (var i = 0; i < 15; i++) {
     const blocks = document.createElement("div");
-    blocks.classList.add("block");
+    if (i < 5) {
+      blocks.classList.add("block1");
+    } else if (i < 10) {
+      blocks.classList.add("block2");
+    } else if (i < 15) {
+      blocks.classList.add("block3");
+    }
     background.appendChild(blocks);
   }
 
@@ -441,7 +448,7 @@ if (window.innerWidth >= 1440) {
     const rgb5 = `rgb(${r5},${g5},${b5})`;
 
     anime({
-      targets: ".block",
+      targets: ".block1",
       backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
       translateX: () => {
         return anime.random(-600, 600);
@@ -461,6 +468,106 @@ if (window.innerWidth >= 1440) {
   };
 
   animateBlocks();
+
+  let animateBlocks2 = () => {
+    const randomBetween = (min, max) =>
+      min + Math.floor(Math.random() * (max - min + 1));
+    const r1 = randomBetween(0, 255);
+    const g1 = randomBetween(0, 255);
+    const b1 = randomBetween(0, 255);
+    const rgb1 = `rgb(${r1},${g1},${b1})`;
+
+    const r2 = randomBetween(0, 255);
+    const g2 = randomBetween(0, 255);
+    const b2 = randomBetween(0, 255);
+    const rgb2 = `rgb(${r2},${g2},${b2})`;
+
+    const r3 = randomBetween(0, 255);
+    const g3 = randomBetween(0, 255);
+    const b3 = randomBetween(0, 255);
+    const rgb3 = `rgb(${r3},${g3},${b3})`;
+
+    const r4 = randomBetween(0, 255);
+    const g4 = randomBetween(0, 255);
+    const b4 = randomBetween(0, 255);
+    const rgb4 = `rgb(${r4},${g4},${b4})`;
+
+    const r5 = randomBetween(0, 255);
+    const g5 = randomBetween(0, 255);
+    const b5 = randomBetween(0, 255);
+    const rgb5 = `rgb(${r5},${g5},${b5})`;
+
+    anime({
+      targets: ".block2",
+      backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      translateX: () => {
+        return anime.random(-600, 600);
+      },
+      translateY: () => {
+        return anime.random(-210, 210);
+      },
+      scale: () => {
+        return anime.random(2, 5);
+      },
+
+      easing: "linear",
+      duration: 3000,
+      delay: anime.stagger(10),
+      complete: animateBlocks2,
+    });
+  };
+
+  animateBlocks2();
+
+  let animateBlocks3 = () => {
+    const randomBetween = (min, max) =>
+      min + Math.floor(Math.random() * (max - min + 1));
+    const r1 = randomBetween(0, 255);
+    const g1 = randomBetween(0, 255);
+    const b1 = randomBetween(0, 255);
+    const rgb1 = `rgb(${r1},${g1},${b1})`;
+
+    const r2 = randomBetween(0, 255);
+    const g2 = randomBetween(0, 255);
+    const b2 = randomBetween(0, 255);
+    const rgb2 = `rgb(${r2},${g2},${b2})`;
+
+    const r3 = randomBetween(0, 255);
+    const g3 = randomBetween(0, 255);
+    const b3 = randomBetween(0, 255);
+    const rgb3 = `rgb(${r3},${g3},${b3})`;
+
+    const r4 = randomBetween(0, 255);
+    const g4 = randomBetween(0, 255);
+    const b4 = randomBetween(0, 255);
+    const rgb4 = `rgb(${r4},${g4},${b4})`;
+
+    const r5 = randomBetween(0, 255);
+    const g5 = randomBetween(0, 255);
+    const b5 = randomBetween(0, 255);
+    const rgb5 = `rgb(${r5},${g5},${b5})`;
+
+    anime({
+      targets: ".block3",
+      backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      translateX: () => {
+        return anime.random(-600, 600);
+      },
+      translateY: () => {
+        return anime.random(-210, 210);
+      },
+      scale: () => {
+        return anime.random(2, 5);
+      },
+
+      easing: "linear",
+      duration: 3000,
+      delay: anime.stagger(10),
+      complete: animateBlocks3,
+    });
+  };
+
+  animateBlocks3();
 }
 
 const wiggleInBtn = () => {
