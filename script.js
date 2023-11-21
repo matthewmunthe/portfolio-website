@@ -405,6 +405,10 @@ window.onclick = function (event) {
   }
 };
 
+// Random RGB
+const randomBetween = (min, max) =>
+  min + Math.floor(Math.random() * (max - min + 1));
+
 if (window.innerWidth >= 1440) {
   const background = document.querySelector(".contact");
   for (var i = 0; i < 15; i++) {
@@ -420,36 +424,35 @@ if (window.innerWidth >= 1440) {
   }
 
   let animateBlocks = () => {
-    const randomBetween = (min, max) =>
-      min + Math.floor(Math.random() * (max - min + 1));
     const r1 = randomBetween(0, 255);
     const g1 = randomBetween(0, 255);
     const b1 = randomBetween(0, 255);
-    const rgb1 = `rgb(${r1},${g1},${b1})`;
+    const rgb1 = `rgba(${r1},${g1},${b1}, 0.65)`;
 
-    const r2 = randomBetween(0, 255);
-    const g2 = randomBetween(0, 255);
-    const b2 = randomBetween(0, 255);
-    const rgb2 = `rgb(${r2},${g2},${b2})`;
+    // const r2 = randomBetween(0, 255);
+    // const g2 = randomBetween(0, 255);
+    // const b2 = randomBetween(0, 255);
+    // const rgb2 = `rgba(${r2},${g2},${b2}, 0.65)`;
 
-    const r3 = randomBetween(0, 255);
-    const g3 = randomBetween(0, 255);
-    const b3 = randomBetween(0, 255);
-    const rgb3 = `rgb(${r3},${g3},${b3})`;
+    // const r3 = randomBetween(0, 255);
+    // const g3 = randomBetween(0, 255);
+    // const b3 = randomBetween(0, 255);
+    // const rgb3 = `rgba(${r3},${g3},${b3}, 0.65)`;
 
-    const r4 = randomBetween(0, 255);
-    const g4 = randomBetween(0, 255);
-    const b4 = randomBetween(0, 255);
-    const rgb4 = `rgb(${r4},${g4},${b4})`;
+    // const r4 = randomBetween(0, 255);
+    // const g4 = randomBetween(0, 255);
+    // const b4 = randomBetween(0, 255);
+    // const rgb4 = `rgba(${r4},${g4},${b4}, 0.65)`;
 
-    const r5 = randomBetween(0, 255);
-    const g5 = randomBetween(0, 255);
-    const b5 = randomBetween(0, 255);
-    const rgb5 = `rgb(${r5},${g5},${b5})`;
+    // const r5 = randomBetween(0, 255);
+    // const g5 = randomBetween(0, 255);
+    // const b5 = randomBetween(0, 255);
+    // const rgb5 = `rgba(${r5},${g5},${b5}, 0.65)`;
 
     anime({
       targets: ".block1",
-      backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      // backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      backgroundColor: [rgb1],
       translateX: () => {
         return anime.random(-600, 600);
       },
@@ -462,7 +465,7 @@ if (window.innerWidth >= 1440) {
 
       easing: "linear",
       duration: 3000,
-      delay: anime.stagger(10),
+      delay: anime.stagger(250),
       complete: animateBlocks,
     });
   };
@@ -470,36 +473,35 @@ if (window.innerWidth >= 1440) {
   animateBlocks();
 
   let animateBlocks2 = () => {
-    const randomBetween = (min, max) =>
-      min + Math.floor(Math.random() * (max - min + 1));
     const r1 = randomBetween(0, 255);
     const g1 = randomBetween(0, 255);
     const b1 = randomBetween(0, 255);
-    const rgb1 = `rgb(${r1},${g1},${b1})`;
+    const rgb1 = `rgba(${r1},${g1},${b1}, 0.65)`;
 
-    const r2 = randomBetween(0, 255);
-    const g2 = randomBetween(0, 255);
-    const b2 = randomBetween(0, 255);
-    const rgb2 = `rgb(${r2},${g2},${b2})`;
+    // const r2 = randomBetween(0, 255);
+    // const g2 = randomBetween(0, 255);
+    // const b2 = randomBetween(0, 255);
+    // const rgb2 = `rgba(${r2},${g2},${b2}, 0.65)`;
 
-    const r3 = randomBetween(0, 255);
-    const g3 = randomBetween(0, 255);
-    const b3 = randomBetween(0, 255);
-    const rgb3 = `rgb(${r3},${g3},${b3})`;
+    // const r3 = randomBetween(0, 255);
+    // const g3 = randomBetween(0, 255);
+    // const b3 = randomBetween(0, 255);
+    // const rgb3 = `rgba(${r3},${g3},${b3}, 0.65)`;
 
-    const r4 = randomBetween(0, 255);
-    const g4 = randomBetween(0, 255);
-    const b4 = randomBetween(0, 255);
-    const rgb4 = `rgb(${r4},${g4},${b4})`;
+    // const r4 = randomBetween(0, 255);
+    // const g4 = randomBetween(0, 255);
+    // const b4 = randomBetween(0, 255);
+    // const rgb4 = `rgba(${r4},${g4},${b4}, 0.65)`;
 
-    const r5 = randomBetween(0, 255);
-    const g5 = randomBetween(0, 255);
-    const b5 = randomBetween(0, 255);
-    const rgb5 = `rgb(${r5},${g5},${b5})`;
+    // const r5 = randomBetween(0, 255);
+    // const g5 = randomBetween(0, 255);
+    // const b5 = randomBetween(0, 255);
+    // const rgb5 = `rgba(${r5},${g5},${b5}, 0.65)`;
 
     anime({
       targets: ".block2",
-      backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      // backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      backgroundColor: [rgb1],
       translateX: () => {
         return anime.random(-600, 600);
       },
@@ -512,7 +514,7 @@ if (window.innerWidth >= 1440) {
 
       easing: "linear",
       duration: 3000,
-      delay: anime.stagger(10),
+      delay: anime.stagger(250),
       complete: animateBlocks2,
     });
   };
@@ -520,36 +522,35 @@ if (window.innerWidth >= 1440) {
   animateBlocks2();
 
   let animateBlocks3 = () => {
-    const randomBetween = (min, max) =>
-      min + Math.floor(Math.random() * (max - min + 1));
     const r1 = randomBetween(0, 255);
     const g1 = randomBetween(0, 255);
     const b1 = randomBetween(0, 255);
-    const rgb1 = `rgb(${r1},${g1},${b1})`;
+    const rgb1 = `rgba(${r1},${g1},${b1}, 0.65)`;
 
-    const r2 = randomBetween(0, 255);
-    const g2 = randomBetween(0, 255);
-    const b2 = randomBetween(0, 255);
-    const rgb2 = `rgb(${r2},${g2},${b2})`;
+    // const r2 = randomBetween(0, 255);
+    // const g2 = randomBetween(0, 255);
+    // const b2 = randomBetween(0, 255);
+    // const rgb2 = `rgba(${r2},${g2},${b2}, 0.65)`;
 
-    const r3 = randomBetween(0, 255);
-    const g3 = randomBetween(0, 255);
-    const b3 = randomBetween(0, 255);
-    const rgb3 = `rgb(${r3},${g3},${b3})`;
+    // const r3 = randomBetween(0, 255);
+    // const g3 = randomBetween(0, 255);
+    // const b3 = randomBetween(0, 255);
+    // const rgb3 = `rgba(${r3},${g3},${b3}, 0.65)`;
 
-    const r4 = randomBetween(0, 255);
-    const g4 = randomBetween(0, 255);
-    const b4 = randomBetween(0, 255);
-    const rgb4 = `rgb(${r4},${g4},${b4})`;
+    // const r4 = randomBetween(0, 255);
+    // const g4 = randomBetween(0, 255);
+    // const b4 = randomBetween(0, 255);
+    // const rgb4 = `rgba(${r4},${g4},${b4}, 0.65)`;
 
-    const r5 = randomBetween(0, 255);
-    const g5 = randomBetween(0, 255);
-    const b5 = randomBetween(0, 255);
-    const rgb5 = `rgb(${r5},${g5},${b5})`;
+    // const r5 = randomBetween(0, 255);
+    // const g5 = randomBetween(0, 255);
+    // const b5 = randomBetween(0, 255);
+    // const rgb5 = `rgba(${r5},${g5},${b5}, 0.65)`;
 
     anime({
       targets: ".block3",
-      backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      // backgroundColor: [rgb1, rgb2, rgb3, rgb4, rgb5],
+      backgroundColor: [rgb1],
       translateX: () => {
         return anime.random(-600, 600);
       },
@@ -562,7 +563,7 @@ if (window.innerWidth >= 1440) {
 
       easing: "linear",
       duration: 3000,
-      delay: anime.stagger(10),
+      delay: anime.stagger(250),
       complete: animateBlocks3,
     });
   };
@@ -571,9 +572,6 @@ if (window.innerWidth >= 1440) {
 }
 
 const wiggleInBtn = () => {
-  const randomBetween = (min, max) =>
-    min + Math.floor(Math.random() * (max - min + 1));
-
   const r6 = randomBetween(0, 255);
   const g6 = randomBetween(0, 255);
   const b6 = randomBetween(0, 255);
